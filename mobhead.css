@@ -55,11 +55,4 @@ html {
     filter: hue-rotate(90deg); /* Rotate hue by 90 degrees when hovering */
     border: 2px solid green; /* Add a green border when hovering */
 }
-@media (min-width: 768px) {
-    #logo img {
-        width: 65%; /* Adjusted width for larger screens */
-    }
-    #downloadLink {
-        padding-left: 11rem; /* Adjusted padding for larger screens */
-    }
-}
+
