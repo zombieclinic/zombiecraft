@@ -5,66 +5,61 @@
 }
 
 html {
-    background-image: url("imgs/background.png");
-    background-size: cover;
+    background-image: url("imgs/background.png"); 
+    background-size: cover; 
     background-repeat: no-repeat;
     height: 100%;
 }
 
 #logo img {
-    width: 100%; /* Take up the full width */
-    max-width: 400px; /* Set maximum width to prevent stretching on larger screens */
+    width: 65%; /* Adjust to fit smaller screens */
     height: auto;
     display: block;
     margin: auto;
-    padding: 2rem;
+    padding: 2rem; /* Decreased padding */
+    margin-bottom: rem;
 }
 
 #content {
     display: flex;
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+    align-items: center;
+}
+#downloadLink {
+    padding-left: 11rem;
 }
 
 #downloadLink,
 #description,
 #droprates {
-    width: 100%; /* Take up the full width */
-    max-width: 400px; /* Limit the maximum width for better readability */
+    flex: 1;
     display: flex;
     align-items: center;
-    padding: 1rem;
 }
 
 .download img,
 #description img,
 #droprates img {
-    width: 100%; /* Take up the full width */
+    display: block;
+    max-width: 100%;
     height: auto;
 }
 
 #description {
-    margin-top: 1rem;
+    margin-left: 1rem; /* Adjust the spacing between download link and description */
 }
 
 .download img:hover,
 #description img:hover,
 #droprates img:hover {
-    filter: hue-rotate(90deg);
-    border: 2px solid green;
+    filter: hue-rotate(90deg); /* Rotate hue by 90 degrees when hovering */
+    border: 2px solid green; /* Add a green border when hovering */
 }
-
 @media (min-width: 768px) {
     #logo img {
-        max-width: 65%; /* Limit the maximum width for larger screens */
+        width: 65%; /* Adjusted width for larger screens */
     }
-    #content {
-        flex-direction: row; /* Align items horizontally on larger screens */
-    }
-    #downloadLink,
-    #description,
-    #droprates {
-        width: auto; /* Reset width to auto for larger screens */
-        max-width: none; /* Reset maximum width for larger screens */
+    #downloadLink {
+        padding-left: 11rem; /* Adjusted padding for larger screens */
     }
 }
