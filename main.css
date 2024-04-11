@@ -1,72 +1,43 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:lightblue;
 }
 
-.grid{
-    background-color: purple;
-    display:grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 200px 1fr 200px;
-    gap: 5px;
-    height: 90vh;
-    padding: 20px;
-}
-header, footer{
-    grid-column: 1/4
-}
-header, aside, article, footer{
-    border-style: solid;
-    background-color: green;
-}
+
+
 #logo img {
-    height: 45vh;
-    width: auto;
-}
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 420px;
-  
-}
-aside {
-
-    padding: 20px;
-}
-
-button {
+    width: 50%;
+    height: auto;
     display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #ccc;
-    border: none;
-    cursor: pointer;
+    margin: auto;
+    padding-top: 3rem;
+
 }
 
-button:hover {
-    background-color: #aaa;
-}
-.mob-name {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: blue;
-    cursor: pointer;
-    font-size: 40px;
-}
-
-.mob-name:hover {
-    color: purple;
-    
-}
-article {
-    text-transform: uppercase;
-}
-article img {
+h1 {
+    text-align: center;
+    margin: 3rem 2rem 7rem;
+    font-family: "Comic Sans MS", cursive;
     display: block;
-    margin: 0 auto;
+    font-size: 3vw;
+
 }
-.donate-link {
-    font-weight: bold;
-    font-size: 35px;
+
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+    #logo img {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.mobheads {
+    margin: 8rem 12rem 0rem;
+}
+.mobheads img:hover {
+    border: 2px solid green; /* Add a green border when hovering */
 }
