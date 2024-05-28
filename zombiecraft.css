@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(fonts/F77MinecraftRegular-0VYv.ttf) format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+#main {
+    background-image: url('imgs/background.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    height: 100vh; /* Makes the element cover the full viewport height */
+    width: 100vw; /* Makes the element cover the full viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrollbars within this element */
+}
+
+
+h1{
+    font-family: 'CustomFont', sans-serif;
+    background: linear-gradient(yellow 10%, green 75%);
+    -webkit-background-clip: text;
+    text-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+    color: transparent;
+    margin: 0; /* Remove default margins */
+    font-size: 5rem;
+    transform: perspective(500px) rotateX(20deg);
+    text-shadow: 1.5rem 1.5rem 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color:white;
+    font-style:unset;
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+}
+
+#enterLink {
+    display: flex;
+    width: 27%;
+    height: 50%;
+}
+
+.click:hover {
+    filter: hue-rotate(90deg); /* Rotate hue by 90 degrees when hovering */
+}

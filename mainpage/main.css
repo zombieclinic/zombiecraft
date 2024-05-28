@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#background {
+    background-image: url('/imgs/background_aboutme.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    height: 90vh; /* Makes the element cover the full viewport height */
+    width: 100vw; /* Makes the element cover the full viewport width */
+}
+main{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+h1{
+    text-align: center;
+}
+.navbar ul {
+    list-style-type:none;
+    background:rgb(75, 75, 75);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden
+}
+.navbar a{
+    font-size: 3rem;
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(48, 48, 48)
+}
+.navbar li{
+    float:left
+}
